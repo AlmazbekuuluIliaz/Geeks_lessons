@@ -1,22 +1,22 @@
-# # первая функция "перемножение чисел"
-# numbers = (2, 3, 4, 5)
+# первая функция "перемножение чисел"
+numbers = (2, 3, 4, 5)
 
-# def multiply_numbers(*args):
-#     result = 1
-#     for num in args:
-#         result *= num
-#     return result
-# result = multiply_numbers(*numbers)
-# print("Результат:", result)
+def multiply_numbers(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
+result = multiply_numbers(*numbers)
+print("Результат:", result)
 
-# # вторая функция "зеркальная строка"
-# test_string = "level"
-# def mirror_string(input_str):
-#     reversed_str = input_str[::-1]  # Вводим строку
+# вторая функция "зеркальная строка"
+test_string = "level"
+def mirror_string(input_str, str = "hello"):
+    reversed_str = input_str[::-1]  # Вводим строку
 
-#     return reversed_str == input_str
-# result = mirror_string(test_string)
-# print(result)  # Выведется True, т.к. "level" читается одинаково в обоих направлениях
+    return reversed_str == input_str
+result = mirror_string(test_string)
+print(result)  # Выведется True, т.к. "level" читается одинаково в обоих направлениях
 
 # третья функция "калькулятор"
 def calculator(num1, action, num2):
